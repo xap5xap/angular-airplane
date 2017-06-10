@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Game from '../game/Game';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  ngOnInit() {
+    console.log('hola');
+    const game: Game = new Game();
+    game.init();
+  }
 }
